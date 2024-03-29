@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from '../assets/logo_1.svg'
 import './JobCard.css'
 
 const JobCard = (props) => {

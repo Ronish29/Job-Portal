@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import JobCard from './JobCard';
-import JobCardWithShadow from './JobCardWithShadow';
+// import JobCardWithShadow from './JobCardWithShadow';
 import { cardData } from '../data/card';
 
 const RecentJobs = () => {

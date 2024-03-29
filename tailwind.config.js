@@ -12,8 +12,9 @@ module.exports = {
     },
     fontFamily: {
       Roboto: ['Roboto', 'sans-serif'],
-      'SofiaSans': ['Sofia Sans', 'sans-serif'], // Added custom font
-      'LeagueSpartan': ['League Spartan', 'sans-serif'], // Added custom font
+      'SofiaSans': ['Sofia Sans', 'sans-serif'],
+      'LeagueSpartan': ['League Spartan', 'sans-serif'],
+      'Inter': ['Inter','sans-serif'] 
     },
     extend: {},
   },
