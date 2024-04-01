@@ -4,6 +4,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { BsFillBellFill } from "react-icons/bs";
 import User from '../assets/User.png'
 import './Navbar.css'
+import ProfileModal from './ProfileModal';
 
 const Navbar = () => {
 
@@ -11,6 +12,13 @@ const Navbar = () => {
 
     const location = useLocation();
     const [activeNavLink, setActiveNavLink] = useState(null);
+
+    const [showModal, setShowModal] = useState(false);
+
+    const handleClick = (event) => {
+        event.preventDefault(); // Prevent default navigation behavior
+        setShowModal(prevState => !prevState); // Show the modal
+    };
 
     useEffect(() => {
         setActiveNavLink(location.pathname);
@@ -50,10 +58,16 @@ const Navbar = () => {
                         isLoggedIn ?
                             (
                                 <>
-                                    <NavLink exact to='/profile'>
+                                    <NavLink exact to='/profile' onClick={handleClick}>
                                         <img src={User} alt="user" className='w-[41.67px] h-[41.67px]' />
-                                        {activeNavLink === '/profile' && <div className='w-full h-1 bg-[#ffffff] line' />}
+                                        {/* You can add conditional styling for the active NavLink here */}
+                                        {/* {activeNavLink === '/profile' && <div className='w-full h-1 bg-[#ffffff] line' />} */}
                                     </NavLink>
+                                    {showModal && (
+                                        <div className='absolute top-[100%]'>
+                                            <ProfileModal />
+                                        </div>
+                                    )}
                                 </>
                             ) : (
                                 <>
