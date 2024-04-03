@@ -77,7 +77,7 @@ const Navbar = () => {
                     {isLoggedIn ?
                         (<>
                             <button className='h-[41px] w-fit rounded-md bg-darkBlue px-[28px] py-[10px] '>
-                                <Link to='/'>
+                                <Link to='/job-post'>
                                     <p className='text-[#ffffff] leading-[21.09px] font-bold font-Roboto text-[18px]'>Post job</p>
                                 </Link>
                             </button>

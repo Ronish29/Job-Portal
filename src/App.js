@@ -14,6 +14,12 @@ import JobApplyPage2 from './components/JobApplyPage2';
 import JobApplyPage3 from './components/JobApplyPage3';
 import JobApplyPage4 from './components/JobApplyPage4';
 import JobApplyPage5 from './components/JobApplyPage5';
+import PostJob from './pages/PostJob';
+import PostJobPage2 from './components/PostJobPage2';
+import PostJobPage1 from './components/PostJobPage1';
+import CreateAccount from './components/CreateAccount';
+import { AccountInfo } from './components/AccountInfo';
+import EmployerNotification from './components/EmployerNotification';
 
 function App() {
   return (
@@ -53,6 +59,20 @@ function App() {
           path='/my-jobs'
           element={<MyJobs />}
         />
+        
+        <Route
+          path='/employer/create-account'
+          element= {<CreateAccount/>}
+        />
+
+        <Route
+          path='/employer/account'
+          element= {<AccountInfo/>}
+        />
+        <Route
+          path='/employer/notification'
+          element= {<EmployerNotification/>}
+        />
 
 
       </Routes>
@@ -65,6 +85,15 @@ function App() {
           <Route path="page-4" element={<JobApplyPage4 />} />
           <Route path="page-5" element={<JobApplyPage5 />} />
 
+        </Route>
+
+      </Routes>
+
+      <Routes>
+        <Route path='/job-post/*' element={<PostJob />}>
+          <Route index element={<PostJobPage1 />} />
+          <Route path="page-2" element={<PostJobPage2 />} />
+        
         </Route>
 
       </Routes>

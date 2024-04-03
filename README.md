@@ -11,60 +11,49 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+General Routes
+/: Homepage
+Element: <HomePage />
+/login: Login Page
+Element: <Login />
+/signup: Signup Page
+Element: <SignUp />
+/job: Jobs Page
+Element: <Jobs />
+/profile: User Profile Page
+Element: <Profile />
+/notification: Notification Page
+Element: <Notifications />
+/edit-profile: Edit Profile Page
+Element: <EditProfile />
+/my-jobs: User's Jobs Page
+Element: <MyJobs />
+Employer Routes
+/employer/create-account: Create Employer Account Page
+Element: <CreateAccount />
+/employer/account: Employer Account Information Page
+Element: <AccountInfo />
+/employer/notification: Employer Notification Page
+Element: <EmployerNotification />
+Job Application Routes
+/job-apply/*: Job Application Process
+Element: <JobApply />
+Subroutes:
+/job-apply/ (index): Job Application Page 1
+Element: <JobApplyPage1 />
+/job-apply/page-2: Job Application Page 2
+Element: <JobApplyPage2 />
+/job-apply/page-3: Job Application Page 3
+Element: <JobApplyPage3 />
+/job-apply/page-4: Job Application Page 4
+Element: <JobApplyPage4 />
+/job-apply/page-5: Job Application Page 5
+Element: <JobApplyPage5 />
+Job Posting Routes
+/job-post/*: Job Posting Process
+Element: <PostJob />
+Subroutes:
+/job-post/ (index): Post Job Page 1
+Element: <PostJobPage1 />
+/job-post/page-2: Post Job Page 2
+Element: <PostJobPage2 />

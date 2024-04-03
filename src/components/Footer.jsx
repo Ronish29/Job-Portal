@@ -22,7 +22,7 @@ const Footer = () => {
                         incidunt.Faucibus nibh leo interdum</p>
                     <div className='w-[250px] border-[1px] border-[#D8D8D8]'></div>
                 </div>
-                <div className='flex flex-col gap-y-10'>
+                <div className='flex flex-col gap-y-10 mt-8'>
                     <div className='flex flex-col'>
                         <p className='h-[38px] font-SofiaSans font-bold text-[32px] leading-[38.4px] uppercase text-[#ffffff]'>For Employers</p>
                         <div className='w-[59px] flex justify-between'>
@@ -31,7 +31,7 @@ const Footer = () => {
                             <div className='w-[4px] border-[3px] border-[#FF8A8A]'></div>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-y-4'>
+                    <div className='flex flex-col gap-y-4 '>
                         <div className='flex gap-x-4 items-center'>
                             <img src={Errow} alt="errow" className='w-[9px] h-[12px]' />
                             <p className='font-Roboto font-normal text-[12px] leading-[14.06px] text-[#ffffff]'>Browse Candidates</p>
@@ -43,7 +43,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className='flex flex-col gap-y-10'>
+                <div className='flex flex-col gap-y-10 mt-8'>
                     <div className='flex flex-col'>
                         <p className='h-[38px] font-SofiaSans font-bold text-[32px] leading-[38.4px] uppercase text-[#ffffff]'>For Candidates</p>
                         <div className='w-[59px] flex justify-between'>
@@ -64,7 +64,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className='flex flex-col gap-y-10'>
+                <div className='flex flex-col gap-y-10 mt-8'>
                     <div className='flex flex-col'>
                         <p className='h-[38px] font-SofiaSans font-bold text-[32px] leading-[38.4px] uppercase text-[#ffffff]'>Contact Us</p>
                         <div className='w-[59px] flex justify-between'>
